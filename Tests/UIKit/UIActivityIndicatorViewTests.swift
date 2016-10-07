@@ -20,15 +20,15 @@ class UIActivityIndicatorTests: XCTestCase {
     }
 
     func testAnimatingProperty() {
-        let indicatorView = UIActivityIndicatorView(frame: CGRectZero)
+        let indicatorView = UIActivityIndicatorView(frame: CGRect.zero)
         _activityIndicatorView = indicatorView
         
         let (pipeSignal, observer) = Signal<Bool, NoError>.pipe()
         indicatorView.rex_animating <~ SignalProducer(signal: pipeSignal)
         
         observer.sendNext(true)
-        XCTAssertTrue(indicatorView.isAnimating())
+        XCTAssertTrue(indicatorView.isAnimating)
         observer.sendNext(false)
-        XCTAssertFalse(indicatorView.isAnimating())
+        XCTAssertFalse(indicatorView.isAnimating)
     }
 }

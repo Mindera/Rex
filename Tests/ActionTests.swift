@@ -13,8 +13,8 @@ import enum Result.NoError
 
 final class ActionTests: XCTestCase {
     
-    enum TestError: ErrorType {
-        case Unknown
+    enum TestError: Error {
+        case unknown
     }
 
     func testStarted() {

@@ -15,10 +15,10 @@ import UIKit
 /// the pair target+action.
 extension UIControl {
 
-    public override class func initialize() {
+    open override class func initialize() {
 
         struct Static {
-            static var token: dispatch_once_t = 0
+            static var token: Int = 0
         }
 
         if self !== UIControl.self {
@@ -27,7 +27,7 @@ extension UIControl {
 
         dispatch_once(&Static.token) {
 
-            let originalSelector = #selector(UIControl.sendAction(_:to:forEvent:))
+            let originalSelector = #selector(UIControl.sendAction(_:to:`for`:)(_:to:forEvent:))
             let swizzledSelector = #selector(UIControl.rex_sendAction(_:to:forEvent:))
 
             let originalMethod = class_getInstanceMethod(self, originalSelector)
@@ -51,7 +51,7 @@ extension UIControl {
 
     // MARK: - Method Swizzling
 
-    func rex_sendAction(action: Selector, to target: AnyObject?, forEvent event: UIEvent?) {
-        target?.performSelector(action, withObject: self)
+    func rex_sendAction(_ action: Selector, to target: AnyObject?, forEvent event: UIEvent?) {
+        target?.perform(action, with: self)
     }
 }

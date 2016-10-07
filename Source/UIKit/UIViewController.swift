@@ -35,13 +35,13 @@ extension UIViewController {
         return triggerForSelector(#selector(UIViewController.viewWillAppear(_:)))
     }
     
-    private func triggerForSelector(selector: Selector) -> Signal<(), NoError>  {
+    fileprivate func triggerForSelector(_ selector: Selector) -> Signal<(), NoError>  {
         return self
             .rac_signalForSelector(selector)
             .rex_toTriggerSignal()
     }
     
-    public typealias DismissingCompletion = (Void -> Void)?
+    public typealias DismissingCompletion = ((Void) -> Void)?
     public typealias DismissingInformation = (animated: Bool, completion: DismissingCompletion)?
     
     /// Wraps a viewController's `dismissViewControllerAnimated` function in a bindable property.
@@ -56,11 +56,11 @@ extension UIViewController {
     /// or `viewController.dismissViewControllerAnimated(true, completion: nil)`
     public var rex_dismissAnimated: MutableProperty<DismissingInformation> {
         
-        let initial: UIViewController -> DismissingInformation = { _ in nil }
+        let initial: (UIViewController) -> DismissingInformation = { _ in nil }
         let setter: (UIViewController, DismissingInformation) -> Void = { host, dismissingInfo in
             
             guard let unwrapped = dismissingInfo else { return }
-            host.dismissViewControllerAnimated(unwrapped.animated, completion: unwrapped.completion)
+            host.dismiss(animated: unwrapped.animated, completion: unwrapped.completion)
         }
         
         let property = associatedProperty(self, key: &dismissModally, initial: initial, setter: setter) { property in

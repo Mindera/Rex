@@ -186,6 +186,6 @@ final class SignalTests: XCTestCase {
     }
 }
 
-enum TestError: ErrorType {
-    case Default
+enum TestError: Error {
+    case `default`
 }

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BD4389C1DA7B34C00561BD3 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BD4389A1DA7B34C00561BD3 /* ReactiveCocoa.framework */; };
+		1BD4389D1DA7B34C00561BD3 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BD4389B1DA7B34C00561BD3 /* Result.framework */; };
+		1BD438A31DA7BBAC00561BD3 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BD4389A1DA7B34C00561BD3 /* ReactiveCocoa.framework */; };
+		1BD438A41DA7BBAC00561BD3 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BD4389B1DA7B34C00561BD3 /* Result.framework */; };
 		4238D5961B4D5950008534C0 /* NSTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4238D5951B4D5950008534C0 /* NSTextField.swift */; };
 		45CED46F1D27C1E300788BDC /* UIActivityIndicatorViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CED46D1D27C1D400788BDC /* UIActivityIndicatorViewTests.swift */; };
 		45CED4701D27C1E400788BDC /* UIActivityIndicatorViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CED46D1D27C1D400788BDC /* UIActivityIndicatorViewTests.swift */; };
@@ -69,8 +73,6 @@
 		D83457301AFEE45E0070616A /* SignalProducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8003EC01AFED30100D7D3C5 /* SignalProducerTests.swift */; };
 		D83457321AFEE4930070616A /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8003EAD1AFEC68A00D7D3C5 /* ReactiveCocoa.framework */; };
 		D83457331AFEE4930070616A /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8003EAE1AFEC68A00D7D3C5 /* Result.framework */; };
-		D83457351AFEE4B20070616A /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8003EC91AFEE3ED00D7D3C5 /* ReactiveCocoa.framework */; };
-		D83457361AFEE4B20070616A /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8003ECA1AFEE3ED00D7D3C5 /* Result.framework */; };
 		D83457391AFEE4BE0070616A /* ReactiveCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D8003EC91AFEE3ED00D7D3C5 /* ReactiveCocoa.framework */; };
 		D834573A1AFEE4BE0070616A /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D8003ECA1AFEE3ED00D7D3C5 /* Result.framework */; };
 		D834573C1AFEE57E0070616A /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8003EC91AFEE3ED00D7D3C5 /* ReactiveCocoa.framework */; };
@@ -93,8 +95,6 @@
 		D8715DA41C21107F005F4191 /* NSData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F0973A1B17F2F7002E15BA /* NSData.swift */; };
 		D8715DA51C21107F005F4191 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F097431B17F3C8002E15BA /* NSObject.swift */; };
 		D8715DA61C21107F005F4191 /* NSUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F0973C1B17F30D002E15BA /* NSUserDefaults.swift */; };
-		D8715DA91C2110DA005F4191 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8715DA71C2110DA005F4191 /* ReactiveCocoa.framework */; };
-		D8715DAA1C2110DA005F4191 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8715DA81C2110DA005F4191 /* Result.framework */; };
 		D8715DB91C2112A9005F4191 /* Rex.h in Headers */ = {isa = PBXBuildFile; fileRef = D8003E931AFEC3D400D7D3C5 /* Rex.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D8715DBA1C2112D1005F4191 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86FFBD91B34B3F0001A89B3 /* Action.swift */; };
 		D8715DBB1C2112D1005F4191 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A454051BD26A1A00C9E790 /* Property.swift */; };
@@ -209,6 +209,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1BD4389A1DA7B34C00561BD3 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
+		1BD4389B1DA7B34C00561BD3 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		1BD438A11DA7B66E00561BD3 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
 		4238D5951B4D5950008534C0 /* NSTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = NSTextField.swift; path = AppKit/NSTextField.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		45CED46B1D27BB8700788BDC /* UIActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIActivityIndicatorView.swift; sourceTree = "<group>"; };
 		45CED46D1D27C1D400788BDC /* UIActivityIndicatorViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIActivityIndicatorViewTests.swift; sourceTree = "<group>"; };
@@ -304,8 +307,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D83457351AFEE4B20070616A /* ReactiveCocoa.framework in Frameworks */,
-				D83457361AFEE4B20070616A /* Result.framework in Frameworks */,
+				1BD438A31DA7BBAC00561BD3 /* ReactiveCocoa.framework in Frameworks */,
+				1BD438A41DA7BBAC00561BD3 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,8 +325,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8715DA91C2110DA005F4191 /* ReactiveCocoa.framework in Frameworks */,
-				D8715DAA1C2110DA005F4191 /* Result.framework in Frameworks */,
+				1BD4389C1DA7B34C00561BD3 /* ReactiveCocoa.framework in Frameworks */,
+				1BD4389D1DA7B34C00561BD3 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +351,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1BD438991DA7B34C00561BD3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BD438A11DA7B66E00561BD3 /* ReactiveSwift.framework */,
+				1BD4389A1DA7B34C00561BD3 /* ReactiveCocoa.framework */,
+				1BD4389B1DA7B34C00561BD3 /* Result.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4238D5941B4D593E008534C0 /* AppKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -370,6 +383,7 @@
 				D8003E901AFEC3D400D7D3C5 /* Source */,
 				D8003E9D1AFEC3D400D7D3C5 /* Tests */,
 				D8003EAA1AFEC57200D7D3C5 /* Binaries */,
+				1BD438991DA7B34C00561BD3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -628,6 +642,7 @@
 				D83457101AFEE44E0070616A /* Frameworks */,
 				D83457111AFEE44E0070616A /* Headers */,
 				D83457121AFEE44E0070616A /* Resources */,
+				1BD4389E1DA7B35D00561BD3 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -719,7 +734,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Neil Pankey";
 				TargetAttributes = {
 					D8003E8D1AFEC3D400D7D3C5 = {
@@ -826,6 +841,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BD4389E1DA7B35D00561BD3 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D8003E891AFEC3D400D7D3C5 /* Sources */ = {
@@ -1026,8 +1060,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -1055,7 +1091,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1074,8 +1110,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -1094,7 +1132,8 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
-				SWIFT_VERSION = 2.3;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1192,6 +1231,7 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
@@ -1214,6 +1254,7 @@
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1223,6 +1264,7 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1240,6 +1282,7 @@
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1265,6 +1308,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "me.neilpa.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -1283,6 +1327,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "me.neilpa.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -1291,6 +1336,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1298,6 +1344,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1315,6 +1362,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1322,6 +1370,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1340,6 +1389,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1364,6 +1414,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;

@@ -14,8 +14,8 @@ extension UIControl {
 
 #if os(iOS)
     /// Creates a producer for the sender whenever a specified control event is triggered.
-    @warn_unused_result(message="Did you forget to use the property?")
-    public func rex_controlEvents(events: UIControlEvents) -> SignalProducer<UIControl?, NoError> {
+    
+    public func rex_controlEvents(_ events: UIControlEvents) -> SignalProducer<UIControl?, NoError> {
         return rac_signalForControlEvents(events)
             .toSignalProducer()
             .map { $0 as? UIControl }
@@ -27,8 +27,8 @@ extension UIControl {
     /// This property uses `UIControlEvents.ValueChanged` and `UIControlEvents.EditingChanged` 
     /// events to detect changes and keep the value up-to-date.
     //
-    @warn_unused_result(message="Did you forget to use the property?")
-    class func rex_value<Host: UIControl, T>(host: Host, getter: Host -> T, setter: (Host, T) -> ()) -> MutableProperty<T> {
+    
+    class func rex_value<Host: UIControl, T>(_ host: Host, getter: @escaping (Host) -> T, setter: (Host, T) -> ()) -> MutableProperty<T> {
         return associatedProperty(host, key: &valueChangedKey, initial: getter, setter: setter) { property in
             property <~
                 host.rex_controlEvents([.ValueChanged, .EditingChanged])
